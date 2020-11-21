@@ -26,7 +26,7 @@ spring:
   liquibase:
     # Remove 'faker' if you do not want the sample data to be loaded automatically
     contexts: dev, faker
-    url: jdbc:postgresql://ec2-54-158-190-214.compute-1.amazonaws.com:5432/d4dr7en6e7mciv
+    url: jdbc:postgresql://13.229.132.148:5432/xbank
   mail:
     host: localhost
     port: 25
@@ -35,14 +35,14 @@ spring:
   messages:
     cache-duration: PT1S # 1 second, see the ISO 8601 standard
   r2dbc:
-    url: r2dbc:postgresql://ec2-54-158-190-214.compute-1.amazonaws.com:5432/d4dr7en6e7mciv
-    username: gbpaojgrckoruk
-    password: 59e13a0c060b4cb378dad07e0a17564d65f81e0f5f4f4b5bda942cb69e4e4a3b
+    url: r2dbc:postgresql://13.229.132.148:5432/xbank
+    username: root
+    password: xbank@123
   thymeleaf:
     cache: false
 
 server:
-  port: ${PORT:5000}
+  port: 8080
 
 # ===================================================================
 jhipster:
